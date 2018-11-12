@@ -15,8 +15,9 @@
 >g++ svm_train.cpp `pkg-config --cflags --libs opencv` -o svm_train  
 >./ svm_train  
 
-## svm分类器测试
+## SVM分类器测试
 运行data_get.cpp  
 >g++ svm_test.cpp `pkg-config --cflags --libs opencv` -o svm_test  
 >./ svm_test  
+
 ![](https://github.com/zj19941113/mnist_HandWriting_Recognition_SVM/blob/master/img/result.png)  
