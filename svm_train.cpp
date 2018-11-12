@@ -66,6 +66,7 @@ int main()
     */
     // opencv 3.4.1
     Ptr<TrainData> tData =TrainData::create(trainingData, ROW_SAMPLE, classes);
+    cout<<"SVM TRAIN START..."<<endl; 
     svm->train(tData);  
     // 或者使用
     // svm->train(trainingData, ROW_SAMPLE, classes);
@@ -77,7 +78,7 @@ int main()
     */
     // opencv 3.4.1
     svm->save("svm.xml");
-    cout<<"训练好了！！！"<<endl; 
+    cout<<"SVM TRAIN SUCCESS!"<<endl; 
     // getchar(); 
     return 0; 
 } 
