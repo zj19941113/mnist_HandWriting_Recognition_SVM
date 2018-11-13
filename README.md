@@ -3,7 +3,7 @@
 在OpenCV的安装路径下，搜索digits，可以得到一张图片，图片大小为1000* 2000，有0-9的10个数字，每5行为一个数字，总共50行，共有5000个手写数字，每个数字块大小为20* 20  
 
 运行 data_get.cpp
->g++ data_get.cpp `pkg-config --cflags --libs opencv` -o data_get  
+>g++ data_get.cpp \`pkg-config --cflags --libs opencv\` -o data_get  
 >./ data_get  
 
 ![](https://github.com/zj19941113/mnist_HandWriting_Recognition_SVM/blob/master/img/data_get.png)  
@@ -12,12 +12,12 @@
 
 ## 模型训练
 运行 svm_train.cpp  
->g++ svm_train.cpp `pkg-config --cflags --libs opencv` -o svm_train  
+>g++ svm_train.cpp \`pkg-config --cflags --libs opencv\` -o svm_train  
 >./ svm_train  
 
 ## SVM分类器测试
 运行 svm_test.cpp  
->g++ svm_test.cpp `pkg-config --cflags --libs opencv` -o svm_test  
+>g++ svm_test.cpp \`pkg-config --cflags --libs opencv\` -o svm_test  
 >./ svm_test  
 
 ![](https://github.com/zj19941113/mnist_HandWriting_Recognition_SVM/blob/master/img/result.png)  
